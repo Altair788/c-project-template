@@ -36,6 +36,18 @@ find . -name ".git" -type d -exec rm -rf {} + 2>/dev/null || true
 rm -rf .git
 git init
 git remote add origin git@github.com:YOUR_USERNAME/my_new_project.git
+
+# затираем всю историю шаблона
+rm -rf .git
+
+# Заново инициализируем
+git init
+git add .
+git commit -m "Initial project"
+git remote add origin git@github.com:Altair788/decimal_lib_c.git
+git branch -M main
+git push -u -f origin main
+
 git branch -M main
 git add . && git commit -m "Initial project"
 git push -u origin main
