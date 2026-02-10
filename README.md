@@ -47,8 +47,4 @@ git commit -m "Initial project"
 git remote add origin git@github.com:Altair788/decimal_lib_c.git
 git branch -M main
 git push -u -f origin main
-
-git branch -M main
-git add . && git commit -m "Initial project"
-git push -u origin main
 git remote -v  # Проверка привязки к репо на GitHub
